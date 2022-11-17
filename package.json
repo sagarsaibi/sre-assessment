@@ -4,7 +4,8 @@
   "description": "API automation for an assessment",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && cucumber-js src/tests/features"
+    "test": "tsc && cucumber-js --format ./Reporter.js src/tests/features",
+    "report": "node_modules/.bin/allure generate ./allure-results/  -o ./allure-report/ --clean && node_modules/.bin/allure open ./allure-report"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/sagarsaibi/sre-assessment#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^8.8.0"
+    "@cucumber/cucumber": "^8.8.0",
+    "allure-commandline": "^2.20.1",
+    "allure-cucumberjs": "^2.0.0-beta.19"
   }
 }
