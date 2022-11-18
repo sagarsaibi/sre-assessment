@@ -20,7 +20,10 @@
   "homepage": "https://github.com/sagarsaibi/sre-assessment#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.8.0",
+    "@playwright/test": "^1.28.0",
     "allure-commandline": "^2.20.1",
-    "allure-cucumberjs": "^2.0.0-beta.19"
+    "allure-cucumberjs": "^2.0.0-beta.19",
+    "playwright": "^1.28.0",
+    "uuid": "^9.0.0"
   }
 }
