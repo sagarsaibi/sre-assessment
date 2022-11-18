@@ -55,5 +55,25 @@ class Create {
             return data;
         });
     }
+    createItemWithDesc(desc) {
+        return __awaiter(this, void 0, void 0, function* () {
+            response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
+                data: {
+                    "description": desc,
+                },
+            });
+            return response;
+        });
+    }
+    createItemWithoutDesc() {
+        return __awaiter(this, void 0, void 0, function* () {
+            response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
+                data: {
+                    "description": "",
+                },
+            });
+            return response;
+        });
+    }
 }
 exports.createItem = new Create();

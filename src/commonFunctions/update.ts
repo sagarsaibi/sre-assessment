@@ -12,7 +12,7 @@ class Update{
     }
 
     async markComplete(obj: any) {
-        console.log("Calling mark complete  " + JSON.stringify(obj))
+        //console.log("Calling mark complete  " + JSON.stringify(obj))
         response = await context.put(URI.UPDATE_TODO_ITEM + obj.id, {
             data: {
                 "id" : obj.id,

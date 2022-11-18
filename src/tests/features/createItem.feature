@@ -1,4 +1,4 @@
-# Feature: As a user I should be able to create a new item in ToDo list
+Feature: As a user I should be able to create a new item in ToDo list
 
 # Scenario: Create new item when list is empty
 #     Given When the ToDo list is empty
@@ -8,21 +8,21 @@
 # Scenario: Create new item with without description
 #     Given When the ToDo list is empty
 #     When User creates a new ToDo item without description
-#     Then A new item is not created
+#     Then Error message for no description is displayed
 
 # Scenario: Create new item with duplicate data
 #     Given When the ToDo list is empty
 #     When User creates a new ToDo item with description 
 #     Then A new item is created in the list
-#     When When user create item with same description
-#     Then Item is is not created
+#     When User create item with same description
+#     Then Error message for duplicate description is displayed
 
 # Scenario: Create new item with same description as of the completed task
 #     Given When the ToDo list is empty
 #     When User creates a new ToDo item with description
 #     Then A new item is created in the list
 #     When User marks the task as completed with the description
-#     When  When user create item with same description
+#     When User create item with same description
 #     Then A new item is created in the list
 
 # Scenario Outline: Create new item with speacial character
@@ -32,16 +32,29 @@
 # Examples:
 #     | description |
 #     | descriptionWith~ |
+#     | descriptionWith! |
+#     | descriptionWith@ |
+#     | descriptionWith# |
+#     | descriptionWith$ |
+#     | descriptionWith% |
+#     | descriptionWith^ |
+#     | descriptionWith& |
+#     | descriptionWith* |
+#     | descriptionWith() |
+#     | descriptionWith{} |
+#     | descriptionWith[] |
+#     | descriptionWith;:'"?<>,. |
 
-# Scenario Outline: Create new item with long characters string
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item with long description "<description>"
-#     Then A new item is created in the list with long description
-# Examples:
-#     | description |
-#     | d |
-#     | small |
-#     | medium |
-#     | bigdescription |
-#     | longdescriptionnnnnnnnnnnnnnnnnnnnn |
-#     | verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn |
+
+Scenario Outline: Create new item with long characters string
+    Given When the ToDo list is empty
+    When User creates a new ToDo item with long description "<description>"
+    Then A new item is created in the list with long description
+Examples:
+    | description |
+    | d |
+    | small |
+    | medium |
+    | bigdescription |
+    | longdescriptionnnnnnnnnnnnnnnnnnnnn |
+    | verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn |

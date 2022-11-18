@@ -26,19 +26,19 @@ class List{
 
     async emptyList(){
         response = await context.get(URI.LIST_TODO_LIST);
-        console.log("Response THEN - " + JSON.stringify(response))
+        //console.log("Response THEN - " + JSON.stringify(response))
         expect(response.ok()).toBeTruthy();
         expect(response.status()).toBe(200);
         let data = JSON.parse((await response.body()).toString()); 
-        console.log("Printing data of [0] - " + data.length)
+        //console.log("Printing data of [0] - " + data.length)
         if(data.length > 0){
             console.log("LIST CONTAINS OBJECTS")
             data.forEach(function(obj: any) { 
-                console.log("PRINTING EACH OBJECT" + JSON.stringify(obj));
-                console.log("PRINTING EACH OBJECT" + obj.isCompleted); 
+                //console.log("PRINTING EACH OBJECT" + JSON.stringify(obj));
+                //console.log("PRINTING EACH OBJECT" + obj.isCompleted); 
                 obj.isCompleted = true;
                 updateItem.markComplete(obj);
-                console.log("PRINTING MODIFIED OBJECT" + JSON.stringify(obj));
+                //console.log("PRINTING MODIFIED OBJECT" + JSON.stringify(obj));
             });
         }else{
             console.log("LIST IS ALREADY EMPTY")

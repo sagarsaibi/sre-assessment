@@ -26,8 +26,24 @@ class Create{
         return data;
     }
 
-    
+    async createItemWithDesc(desc:string) {
+        response = await context.post(URI.CREATE_TODO_ITEM, {
+            data: {
+                "description" : desc,
+            },
+        });
 
+        return response;
+    }
+    async createItemWithoutDesc() {
+        response = await context.post(URI.CREATE_TODO_ITEM, {
+            data: {
+                "description" : "",
+            },
+        });
+
+        return response;
+    }
 }
 
 export const createItem = new Create();

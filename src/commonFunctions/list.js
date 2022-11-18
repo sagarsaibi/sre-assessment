@@ -58,19 +58,19 @@ class List {
     emptyList() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
-            console.log("Response THEN - " + JSON.stringify(response));
+            //console.log("Response THEN - " + JSON.stringify(response))
             (0, test_1.expect)(response.ok()).toBeTruthy();
             (0, test_1.expect)(response.status()).toBe(200);
             let data = JSON.parse((yield response.body()).toString());
-            console.log("Printing data of [0] - " + data.length);
+            //console.log("Printing data of [0] - " + data.length)
             if (data.length > 0) {
                 console.log("LIST CONTAINS OBJECTS");
                 data.forEach(function (obj) {
-                    console.log("PRINTING EACH OBJECT" + JSON.stringify(obj));
-                    console.log("PRINTING EACH OBJECT" + obj.isCompleted);
+                    //console.log("PRINTING EACH OBJECT" + JSON.stringify(obj));
+                    //console.log("PRINTING EACH OBJECT" + obj.isCompleted); 
                     obj.isCompleted = true;
                     update_1.updateItem.markComplete(obj);
-                    console.log("PRINTING MODIFIED OBJECT" + JSON.stringify(obj));
+                    //console.log("PRINTING MODIFIED OBJECT" + JSON.stringify(obj));
                 });
             }
             else {

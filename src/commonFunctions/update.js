@@ -42,7 +42,7 @@ class Update {
     }
     markComplete(obj) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log("Calling mark complete  " + JSON.stringify(obj));
+            //console.log("Calling mark complete  " + JSON.stringify(obj))
             response = yield cucumber_conf_1.context.put(URI.UPDATE_TODO_ITEM + obj.id, {
                 data: {
                     "id": obj.id,
