@@ -40,8 +40,12 @@ const common_1 = require("../commonFunctions/common");
 let response;
 class Create {
     constructor() {
-        console.log("Constructor called Create");
+        console.log("Constructor for Create");
     }
+    /**
+    * Create randome todo item
+    * @returns ID of the Item created
+    */
     createRandomItem() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
@@ -49,12 +53,17 @@ class Create {
                     "description": common_1.common.generateRandomDesc(),
                 },
             });
+            //Item creation successful
             (0, test_1.expect)(response.ok()).toBeTruthy();
             (0, test_1.expect)(response.status()).toBe(201);
             let data = JSON.parse((yield response.body()).toString());
             return data;
         });
     }
+    /**
+    * Create items with specified description
+    * @returns reponse of the POST API call to create item
+    */
     createItemWithDesc(desc) {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
@@ -65,6 +74,10 @@ class Create {
             return response;
         });
     }
+    /**
+    * Create item without any description
+    * @returns reponse of the POST API call to create item
+    */
     createItemWithoutDesc() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {

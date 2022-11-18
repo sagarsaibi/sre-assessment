@@ -40,6 +40,10 @@ class Update {
     constructor() {
         console.log("Constructor called for update");
     }
+    /**
+    * Mark item as completed for a specified ID
+    *
+    */
     markComplete(obj) {
         return __awaiter(this, void 0, void 0, function* () {
             //console.log("Calling mark complete  " + JSON.stringify(obj))
@@ -52,6 +56,10 @@ class Update {
             });
         });
     }
+    /**
+    * Update description to a specified value for the item with specified ID
+    * @returns the reponse of PUT API call
+    */
     updateDecription(id, desc, status) {
         return __awaiter(this, void 0, void 0, function* () {
             console.log("Modifying object with ID  " + id);
@@ -66,6 +74,10 @@ class Update {
             return response;
         });
     }
+    /**
+    * Update status to a specified status for the item with specified ID
+    * @returns the reponse of PUT API call
+    */
     updateStatus(id, status) {
         return __awaiter(this, void 0, void 0, function* () {
             console.log("Modifying object with ID  " + id);

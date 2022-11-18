@@ -40,8 +40,12 @@ const update_1 = require("./update");
 let response;
 class List {
     constructor() {
-        console.log("Constructor called list");
+        console.log("Constructor for List");
     }
+    /**
+    * Function to calculate count of items in the list
+    * @returns count of the items in the list
+    */
     getCurrentListCount() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
@@ -55,6 +59,10 @@ class List {
             return data.length;
         });
     }
+    /**
+    * Marks all items in the list as completed
+    *
+    */
     emptyList() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
@@ -76,9 +84,12 @@ class List {
             else {
                 console.log("LIST IS ALREADY EMPTY");
             }
-            return data.length;
         });
     }
+    /**
+    * Lists items for a given ID
+    * @returns the item with specified ID
+    */
     listItem(itemID) {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_ITEM + itemID);
@@ -92,6 +103,10 @@ class List {
             return response;
         });
     }
+    /**
+    * Lists all items
+    * @returns the list of item
+    */
     listAll() {
         return __awaiter(this, void 0, void 0, function* () {
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);

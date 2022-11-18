@@ -25,37 +25,26 @@ let uuid = "";
 (0, cucumber_1.When)('User lists ToDo items with ID', function () {
     return __awaiter(this, void 0, void 0, function* () {
         uuid = common_1.common.generateUUID();
-        console.log("When - Generating UUID " + uuid);
-        //response = await context.get(URI.LIST_TODO_ITEM + uuid);
-        //console.log("Response THEN ID - " + await response)
         response = yield list_1.listItem.listItem(uuid);
-        console.log("Response THEN ID ------- " + JSON.stringify(response));
     });
 });
 (0, cucumber_1.Then)('Error message is displayed', function () {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log("THEN");
         (0, test_1.expect)(response.status()).toBe(404);
         let resString = (yield response.body()).toString();
-        console.log("Printing response - " + resString);
         (0, test_1.expect)(resString).toEqual("Todo item with id " + uuid + " not found");
     });
 });
 //Scenario: List items with ToDO list has items
 (0, cucumber_1.Given)('When the list has items', function () {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log("Given");
         uuid = yield create_1.createItem.createRandomItem();
-        console.log("Create item with id   " + uuid);
     });
 });
 (0, cucumber_1.When)('User lists ToDo items with ID from list', function () {
     return __awaiter(this, void 0, void 0, function* () {
         //uuid = "72be6b1a-166d-4669-bdf9-ce182f0192b0"
-        console.log("When - Generating UUID " + uuid);
-        //response = await context.get(URI.LIST_TODO_ITEM + uuid);
         response = yield list_1.listItem.listItem(uuid);
-        console.log("Response THEN ID - " + JSON.stringify(response));
     });
 });
 (0, cucumber_1.Then)('Item is displayed with success', function () {

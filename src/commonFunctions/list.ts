@@ -9,9 +9,14 @@ let response: APIResponse
 class List{
 
     constructor() {
-        console.log("Constructor called list");
+        console.log("Constructor for List");
     }
 
+    
+    /**
+    * Function to calculate count of items in the list
+    * @returns count of the items in the list
+    */
     async getCurrentListCount(){
         response = await context.get(URI.LIST_TODO_LIST);
         console.log("Response THEN - " + JSON.stringify(response))
@@ -24,6 +29,10 @@ class List{
         return data.length;
     }
 
+    /**
+    * Marks all items in the list as completed
+    * 
+    */
     async emptyList(){
         response = await context.get(URI.LIST_TODO_LIST);
         //console.log("Response THEN - " + JSON.stringify(response))
@@ -43,9 +52,13 @@ class List{
         }else{
             console.log("LIST IS ALREADY EMPTY")
         }
-        return data.length;
+        
     }
 
+    /**
+    * Lists items for a given ID
+    * @returns the item with specified ID
+    */
     async listItem(itemID:string){
         response = await context.get(URI.LIST_TODO_ITEM+itemID);
         console.log("Response LIST ITEM - " + JSON.stringify(response))
@@ -58,6 +71,10 @@ class List{
         return response;
     }
 
+    /**
+    * Lists all items
+    * @returns the list of item
+    */
     async listAll(){
         response = await context.get(URI.LIST_TODO_LIST);
         console.log("Response LIST ITEM - " + JSON.stringify(response))
