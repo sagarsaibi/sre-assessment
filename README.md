@@ -29,7 +29,11 @@ It will open default browser and open the HTML report
 
 ## Run with tags (optionally)
 
-Command to run with tags: ### npm test -- --tags <tagname>    
+Command to run with tags: 
+
+```sh
+npm test -- --tags <tagname>    
+```
 
 ```sh
     @smoke - Run basic scenarios for all actions (Create,List,Update)
