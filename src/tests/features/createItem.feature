@@ -1,49 +1,49 @@
 Feature: As a user I should be able to create a new item in ToDo list
 
-# Scenario: Create new item when list is empty
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item
-#     Then A new item is created in the list
+Scenario: Create new item when list is empty
+    Given When the ToDo list is empty
+    When User creates a new ToDo item
+    Then A new item is created in the list
 
-# Scenario: Create new item with without description
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item without description
-#     Then Error message for no description is displayed
+Scenario: Create new item with without description
+    Given When the ToDo list is empty
+    When User creates a new ToDo item without description
+    Then Error message for no description is displayed
 
-# Scenario: Create new item with duplicate data
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item with description 
-#     Then A new item is created in the list
-#     When User create item with same description
-#     Then Error message for duplicate description is displayed
+Scenario: Create new item with duplicate data
+    Given When the ToDo list is empty
+    When User creates a new ToDo item with description 
+    Then A new item is created in the list
+    When User create item with same description
+    Then Error message for duplicate description is displayed
 
-# Scenario: Create new item with same description as of the completed task
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item with description
-#     Then A new item is created in the list
-#     When User marks the task as completed with the description
-#     When User create item with same description
-#     Then A new item is created in the list
+Scenario: Create new item with same description as of the completed task
+    Given When the ToDo list is empty
+    When User creates a new ToDo item with description
+    Then A new item is created in the list
+    When User marks the task as completed with the description
+    When User create item with same description
+    Then A new item is created in the list
 
-# Scenario Outline: Create new item with speacial character
-#     Given When the ToDo list is empty
-#     When User creates a new ToDo item with special character "<description>"
-#     Then A new item is created in the list with special character 
-# Examples:
-#     | description |
-#     | descriptionWith~ |
-#     | descriptionWith! |
-#     | descriptionWith@ |
-#     | descriptionWith# |
-#     | descriptionWith$ |
-#     | descriptionWith% |
-#     | descriptionWith^ |
-#     | descriptionWith& |
-#     | descriptionWith* |
-#     | descriptionWith() |
-#     | descriptionWith{} |
-#     | descriptionWith[] |
-#     | descriptionWith;:'"?<>,. |
+Scenario Outline: Create new item with speacial character
+    Given When the ToDo list is empty
+    When User creates a new ToDo item with special character "<description>"
+    Then A new item is created in the list with special character 
+Examples:
+    | description |
+    | descriptionWith~ |
+    | descriptionWith! |
+    | descriptionWith@ |
+    | descriptionWith# |
+    | descriptionWith$ |
+    | descriptionWith% |
+    | descriptionWith^ |
+    | descriptionWith& |
+    | descriptionWith* |
+    | descriptionWith() |
+    | descriptionWith{} |
+    | descriptionWith[] |
+    | descriptionWith;:'"?<>,. |
 
 
 Scenario Outline: Create new item with long characters string

@@ -60,7 +60,7 @@ let dupDesc = "duplicate description"
         response = await createItem.createItemWithDesc(dupDesc);
         //uuid = JSON.parse((await response.body()).toString());
         console.log("DUPLICATE DESCRIPTION UUID" + JSON.stringify(response))
-        expect(response.status()).toBe(201);
+        //expect(response.status()).toBe(201);
     });
 
     Then('Error message for duplicate description is displayed', async function(){
@@ -89,7 +89,7 @@ let dupDesc = "duplicate description"
 
 //Scenario Outline: Create new item with speacial character
     When('User creates a new ToDo item with special character {string}', async function(description:string){
-        console.log("CREATING USER WITH SPECIAL CHARACHTERS " + description )
+        console.log("CREATING USER WITH SPECIAL CHARACHTERS "  )
         response = await createItem.createItemWithDesc(description);
         expect(response.status()).toBe(201);
         uuid = JSON.parse((await response.body()).toString());

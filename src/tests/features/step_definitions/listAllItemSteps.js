@@ -12,8 +12,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const cucumber_1 = require("@cucumber/cucumber");
 const test_1 = require("@playwright/test");
 const list_1 = require("../../../commonFunctions/list");
+const create_1 = require("../../../commonFunctions/create");
 let response;
-let response2;
+let uuid = "";
 //Scenario: List items with ToDo list is empty
 // Given('When the list is empty',function(){
 //     console.log("Given")
@@ -21,6 +22,7 @@ let response2;
 (0, cucumber_1.When)('User lists ToDo items', function () {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("When");
+        response = yield list_1.listItem.emptyList();
         response = yield list_1.listItem.listAll();
     });
 });
@@ -37,9 +39,20 @@ let response2;
 // Given('When the list has items',function(){
 //     console.log("Given")
 // });
+(0, cucumber_1.When)('User creates few items', function () {
+    return __awaiter(this, void 0, void 0, function* () {
+        console.log("When");
+        for (let i = 0; i < 5; i++) {
+            console.log("Creating user " + i);
+            uuid = yield create_1.createItem.createRandomItem();
+            console.log("Create item with id   " + uuid);
+        }
+    });
+});
 (0, cucumber_1.Then)('Item list is displayed successfully', function () {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("Then");
+        response = yield list_1.listItem.listAll();
         (0, test_1.expect)(response.status()).toBe(200);
         let data = JSON.parse((yield response.body()).toString());
         (0, test_1.expect)(data.length).toBeGreaterThan(0);
