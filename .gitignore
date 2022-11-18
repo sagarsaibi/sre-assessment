@@ -1,0 +1,5 @@
+# Ignore Allure result files
+./allure-results/*
+
+# Ignore Allure report files
+./allure-report/*
