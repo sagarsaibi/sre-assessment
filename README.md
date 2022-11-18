@@ -34,7 +34,7 @@ Command to run with tags:
 npm test -- --tags <tagname>    
 ```
 
-Tagnames
+Tag Names
 ```sh
     @smoke - Run basic scenarios for all actions (Create,List,Update)
     @positive - Run all positve scenarios
