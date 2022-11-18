@@ -1,5 +1,8 @@
-#SRE Assesment
+# SRE Assesment
 This is API automation built with Cucumber for BDD, Playwright for API calls and Allure for reporting
+
+## Pre-requisite
+Install Node.js and Typescript on your machine
 
 ## Usage
 
