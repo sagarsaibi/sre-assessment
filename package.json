@@ -4,8 +4,8 @@
   "description": "API automation for an assessment",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && cucumber-js --format ./Reporter.js src/tests/features",
-    "report": "node_modules/.bin/allure generate ./allure-results/  -o ./allure-report/ --clean && node_modules/.bin/allure open ./allure-report"
+    "test": "tsc && cucumber-js src/tests/features -f json:report/json/cucumber_report.json",
+    "report" : "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "allure-cucumberjs": "^2.0.0-beta.19",
     "playwright": "^1.28.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0"
   }
 }

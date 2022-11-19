@@ -20,6 +20,7 @@ Scenario: Create new item with duplicate data
     Then A new item is created in the list
     When User create item with same description
     Then Error message for duplicate description is displayed
+    
 
 @smoke @positive
 Scenario: Create new item with same description as of the completed task
@@ -49,7 +50,7 @@ Examples:
     | descriptionWith() |
     | descriptionWith{} |
     | descriptionWith[] |
-    | descriptionWith;:'"?<>,. |
+    | descriptionWith;:'?<>,. |
 
 @positive
 Scenario Outline: Create new item with long characters string

@@ -46,16 +46,20 @@ class Create {
     * Create randome todo item
     * @returns ID of the Item created
     */
-    createRandomItem() {
+    createRandomItem(worldObject) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Calling API - " + URI.CREATE_TODO_ITEM);
+            var desc = common_1.common.generateRandomDesc();
+            worldObject.attach("Creating object with description " + desc);
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
                 data: {
-                    "description": common_1.common.generateRandomDesc(),
+                    "description": desc,
                 },
             });
             //Item creation successful
             (0, test_1.expect)(response.ok()).toBeTruthy();
             (0, test_1.expect)(response.status()).toBe(201);
+            worldObject.attach("Item created successfully");
             let data = JSON.parse((yield response.body()).toString());
             return data;
         });
@@ -64,8 +68,10 @@ class Create {
     * Create items with specified description
     * @returns reponse of the POST API call to create item
     */
-    createItemWithDesc(desc) {
+    createItemWithDesc(worldObject, desc) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Calling API - " + URI.CREATE_TODO_ITEM);
+            worldObject.attach("Creating object with description " + desc);
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
                 data: {
                     "description": desc,
@@ -78,8 +84,10 @@ class Create {
     * Create item without any description
     * @returns reponse of the POST API call to create item
     */
-    createItemWithoutDesc() {
+    createItemWithoutDesc(worldObject) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Calling API - " + URI.CREATE_TODO_ITEM);
+            worldObject.attach("Creating object WITHOUT description ");
             response = yield cucumber_conf_1.context.post(URI.CREATE_TODO_ITEM, {
                 data: {
                     "description": "",

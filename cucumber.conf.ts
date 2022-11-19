@@ -11,3 +11,13 @@ BeforeAll(async function () {
           },
     });
 });
+
+
+After(async function () {
+    const userDetails = Buffer.from(JSON.stringify("Shared.userDetails"));
+    //this.log("Logging from after hook")
+    this.attach("Logging from after hook")
+    //await this.World.attach(userDetails, 'application/json');
+    const testData = Buffer.from(JSON.stringify("Shared.testDataObj"));
+    //await this.World.attach(testData, 'application/json');
+});

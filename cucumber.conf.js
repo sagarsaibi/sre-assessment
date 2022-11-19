@@ -23,3 +23,13 @@ const test_1 = require("@playwright/test");
         });
     });
 });
+(0, cucumber_1.After)(function () {
+    return __awaiter(this, void 0, void 0, function* () {
+        const userDetails = Buffer.from(JSON.stringify("Shared.userDetails"));
+        //this.log("Logging from after hook")
+        this.attach("Logging from after hook");
+        //await this.World.attach(userDetails, 'application/json');
+        const testData = Buffer.from(JSON.stringify("Shared.testDataObj"));
+        //await this.World.attach(testData, 'application/json');
+    });
+});

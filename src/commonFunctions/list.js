@@ -46,16 +46,14 @@ class List {
     * Function to calculate count of items in the list
     * @returns count of the items in the list
     */
-    getCurrentListCount() {
+    getCurrentListCount(worldObject) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Calling API - " + URI.LIST_TODO_LIST);
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
-            console.log("Response THEN - " + JSON.stringify(response));
             (0, test_1.expect)(response.ok()).toBeTruthy();
             (0, test_1.expect)(response.status()).toBe(200);
             let data = JSON.parse((yield response.body()).toString());
-            //return response.body();
-            console.log("Printing data - " + JSON.stringify(data));
-            console.log("Printing data of [0] - " + data.length);
+            worldObject.attach("Current list count is " + data.length);
             return data.length;
         });
     }
@@ -63,26 +61,25 @@ class List {
     * Marks all items in the list as completed
     *
     */
-    emptyList() {
+    emptyList(worldObject) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Calling API - " + URI.LIST_TODO_LIST);
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
             //console.log("Response THEN - " + JSON.stringify(response))
             (0, test_1.expect)(response.ok()).toBeTruthy();
             (0, test_1.expect)(response.status()).toBe(200);
             let data = JSON.parse((yield response.body()).toString());
-            //console.log("Printing data of [0] - " + data.length)
+            worldObject.attach("Current list count is " + data.length);
             if (data.length > 0) {
-                console.log("LIST CONTAINS OBJECTS");
+                worldObject.attach("List contains " + data.length + " objects");
                 data.forEach(function (obj) {
-                    //console.log("PRINTING EACH OBJECT" + JSON.stringify(obj));
-                    //console.log("PRINTING EACH OBJECT" + obj.isCompleted); 
+                    worldObject.attach("Marking object complete - " + JSON.stringify(obj));
                     obj.isCompleted = true;
-                    update_1.updateItem.markComplete(obj);
-                    //console.log("PRINTING MODIFIED OBJECT" + JSON.stringify(obj));
+                    update_1.updateItem.markComplete(worldObject, obj);
                 });
             }
             else {
-                console.log("LIST IS ALREADY EMPTY");
+                worldObject.attach("List is empty");
             }
         });
     }
@@ -90,16 +87,11 @@ class List {
     * Lists items for a given ID
     * @returns the item with specified ID
     */
-    listItem(itemID) {
+    listItem(worldObject, itemID) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Listing item with id " + itemID);
+            worldObject.attach("API - " + URI.LIST_TODO_ITEM + itemID);
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_ITEM + itemID);
-            console.log("Response LIST ITEM - " + JSON.stringify(response));
-            //expect(response.ok()).toBeTruthy();
-            //expect(response.status()).toBe(200);
-            // let data = JSON.parse((await response.body()).toString()); 
-            // //return response.body();
-            // console.log("Printing data - " + JSON.stringify(data))
-            // console.log("Printing data of [0] - " + data.length)
             return response;
         });
     }
@@ -107,10 +99,11 @@ class List {
     * Lists all items
     * @returns the list of item
     */
-    listAll() {
+    listAll(worldObject) {
         return __awaiter(this, void 0, void 0, function* () {
+            worldObject.attach("Listing All items");
+            worldObject.attach("API - " + URI.LIST_TODO_LIST);
             response = yield cucumber_conf_1.context.get(URI.LIST_TODO_LIST);
-            console.log("Response LIST ITEM - " + JSON.stringify(response));
             return response;
         });
     }

@@ -44,9 +44,10 @@ class Update {
     * Mark item as completed for a specified ID
     *
     */
-    markComplete(obj) {
+    markComplete(worldObject, obj) {
         return __awaiter(this, void 0, void 0, function* () {
-            //console.log("Calling mark complete  " + JSON.stringify(obj))
+            worldObject.attach("Calling API - " + URI.UPDATE_TODO_ITEM);
+            worldObject.attach("Updating item status to complete " + JSON.stringify(obj));
             response = yield cucumber_conf_1.context.put(URI.UPDATE_TODO_ITEM + obj.id, {
                 data: {
                     "id": obj.id,
@@ -60,10 +61,11 @@ class Update {
     * Update description to a specified value for the item with specified ID
     * @returns the reponse of PUT API call
     */
-    updateDecription(id, desc, status) {
+    updateDecription(worldObject, id, desc, status) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log("Modifying object with ID  " + id);
-            console.log("Updating description to   " + desc);
+            worldObject.attach("Calling API - " + URI.UPDATE_TODO_ITEM);
+            worldObject.attach("Modifying item with ID  " + id);
+            worldObject.attach("Updating description to   " + desc);
             response = yield cucumber_conf_1.context.put(URI.UPDATE_TODO_ITEM + id, {
                 data: {
                     "id": id,
@@ -78,10 +80,11 @@ class Update {
     * Update status to a specified status for the item with specified ID
     * @returns the reponse of PUT API call
     */
-    updateStatus(id, status) {
+    updateStatus(worldObject, id, status) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log("Modifying object with ID  " + id);
-            console.log("Updating status to   " + status);
+            worldObject.attach("Calling API - " + URI.UPDATE_TODO_ITEM);
+            worldObject.attach("Modifying item with ID  " + id);
+            worldObject.attach("Updating status to   " + status);
             response = yield cucumber_conf_1.context.put(URI.UPDATE_TODO_ITEM + id, {
                 data: {
                     "id": id,

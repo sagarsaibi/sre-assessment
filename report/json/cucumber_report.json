@@ -1,0 +1,4894 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-when-list-is-empty",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create new item when list is empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34981457
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 4",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 4 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"97f0d2fb-123b-43bd-81d3-e2d2b198aebe\",\"description\":\"wj9q5f\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"97f0d2fb-123b-43bd-81d3-e2d2b198aebe\",\"description\":\"wj9q5f\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"28924785-ba5c-4880-b2e9-53b155cb17fd\",\"description\":\"3ehg2\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"28924785-ba5c-4880-b2e9-53b155cb17fd\",\"description\":\"3ehg2\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"46b3674f-f530-4aaf-b033-35d1404b662b\",\"description\":\"Modified Description\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"46b3674f-f530-4aaf-b033-35d1404b662b\",\"description\":\"Modified Description\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"9a28e0f8-37e4-4e13-8b46-4727b8e38e19\",\"description\":\"desc\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"9a28e0f8-37e4-4e13-8b46-4727b8e38e19\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User creates a new ToDo item",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12627417
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description amkxp",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Generated random UUID 05d8048a-2068-4682-842d-807d5ad73e6a to list",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with UUID 05d8048a-2068-4682-842d-807d5ad73e6a",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "A new item is created in the list",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5595458
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 05d8048a-2068-4682-842d-807d5ad73e6a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/05d8048a-2068-4682-842d-807d5ad73e6a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"05d8048a-2068-4682-842d-807d5ad73e6a\",\"description\":\"amkxp\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95375
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-without-description",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Create new item with without description",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4510457
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"05d8048a-2068-4682-842d-807d5ad73e6a\",\"description\":\"amkxp\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"05d8048a-2068-4682-842d-807d5ad73e6a\",\"description\":\"amkxp\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User creates a new ToDo item without description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4629500
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object WITHOUT description ",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Error message for no description is displayed",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1232332
+            },
+            "embeddings": [
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-ed43cbbf407ce846b38f239484018812-516a73b3ba967f46-00\",\"errors\":{\"Description\":[\"Description field can not be empty\"]}}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 400 Expected status was 400",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73874
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-duplicate-data",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Create new item with duplicate data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5090000
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List is empty",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User creates a new ToDo item with description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19907250
+            },
+            "embeddings": [
+              {
+                "data": "Create item with duplicate description - duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "A new item is created in the list",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4751457
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 981bf7c3-164b-4bb3-84be-fbede52ba5cf",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/981bf7c3-164b-4bb3-84be-fbede52ba5cf",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"981bf7c3-164b-4bb3-84be-fbede52ba5cf\",\"description\":\"duplicate description\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User create item with same description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5081332
+            },
+            "embeddings": [
+              {
+                "data": "Create item with same duplicate description - duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description duplicate description",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Error message for duplicate description is displayed",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 790666
+            },
+            "embeddings": [
+              {
+                "data": "Received respose status as - 409 Expected status was 409",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Received respose - A todo item with description already exists Expected response was A todo item with description already exists",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 154332
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-same-description-as-of-the-completed-task",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Create new item with same description as of the completed task",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4480791
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"981bf7c3-164b-4bb3-84be-fbede52ba5cf\",\"description\":\"duplicate description\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"981bf7c3-164b-4bb3-84be-fbede52ba5cf\",\"description\":\"duplicate description\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "User creates a new ToDo item with description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9928833
+            },
+            "embeddings": [
+              {
+                "data": "Create item with duplicate description - duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "A new item is created in the list",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8285083
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6\",\"description\":\"duplicate description\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "User marks the task as completed with the description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9397583
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating status to   true",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User create item with same description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5233999
+            },
+            "embeddings": [
+              {
+                "data": "Create item with same duplicate description - duplicate description",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description duplicate description",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "A new item is created in the list",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4787666
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"890bd0ac-ea6c-4c2b-8a7c-315eb506c5a6\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33958
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 25
+          },
+          {
+            "name": "@positive",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6866291
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"73667122-a4ba-44c0-9940-e302ccbe5c11\",\"description\":\"duplicate description\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"73667122-a4ba-44c0-9940-e302ccbe5c11\",\"description\":\"duplicate description\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith~\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7896167
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith~",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"3f86eb52-9866-4108-8635-35d50ea7afa8\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5253333
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 3f86eb52-9866-4108-8635-35d50ea7afa8",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/3f86eb52-9866-4108-8635-35d50ea7afa8",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"3f86eb52-9866-4108-8635-35d50ea7afa8\",\"description\":\"descriptionWith~\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44916
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5127209
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"3f86eb52-9866-4108-8635-35d50ea7afa8\",\"description\":\"descriptionWith~\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"3f86eb52-9866-4108-8635-35d50ea7afa8\",\"description\":\"descriptionWith~\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith!\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5742000
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith!",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"6cebd1a1-628d-4c12-b97a-720cb193626b\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6022833
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 6cebd1a1-628d-4c12-b97a-720cb193626b",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/6cebd1a1-628d-4c12-b97a-720cb193626b",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"6cebd1a1-628d-4c12-b97a-720cb193626b\",\"description\":\"descriptionWith!\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41375
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4831250
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"6cebd1a1-628d-4c12-b97a-720cb193626b\",\"description\":\"descriptionWith!\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"6cebd1a1-628d-4c12-b97a-720cb193626b\",\"description\":\"descriptionWith!\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith@\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4865957
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith@",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"526724aa-4b06-4726-8c75-aaa6e7481fa0\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4528374
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 526724aa-4b06-4726-8c75-aaa6e7481fa0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/526724aa-4b06-4726-8c75-aaa6e7481fa0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"526724aa-4b06-4726-8c75-aaa6e7481fa0\",\"description\":\"descriptionWith@\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39834
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5680749
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"526724aa-4b06-4726-8c75-aaa6e7481fa0\",\"description\":\"descriptionWith@\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"526724aa-4b06-4726-8c75-aaa6e7481fa0\",\"description\":\"descriptionWith@\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith#\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5134291
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith#",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"1927348c-d573-4ced-8132-255b03789c9c\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6871749
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 1927348c-d573-4ced-8132-255b03789c9c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/1927348c-d573-4ced-8132-255b03789c9c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"1927348c-d573-4ced-8132-255b03789c9c\",\"description\":\"descriptionWith#\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52665
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4072291
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"1927348c-d573-4ced-8132-255b03789c9c\",\"description\":\"descriptionWith#\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"1927348c-d573-4ced-8132-255b03789c9c\",\"description\":\"descriptionWith#\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith$\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5811249
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith$",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"e2466e69-456f-479c-9761-c0852fd5ff2f\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6875708
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id e2466e69-456f-479c-9761-c0852fd5ff2f",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/e2466e69-456f-479c-9761-c0852fd5ff2f",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"e2466e69-456f-479c-9761-c0852fd5ff2f\",\"description\":\"descriptionWith$\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56332
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4229207
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"e2466e69-456f-479c-9761-c0852fd5ff2f\",\"description\":\"descriptionWith$\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"e2466e69-456f-479c-9761-c0852fd5ff2f\",\"description\":\"descriptionWith$\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith%\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5405750
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith%",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"ae6a6313-65fb-4757-91f3-f07b683cdeb2\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4694249
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id ae6a6313-65fb-4757-91f3-f07b683cdeb2",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/ae6a6313-65fb-4757-91f3-f07b683cdeb2",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"ae6a6313-65fb-4757-91f3-f07b683cdeb2\",\"description\":\"descriptionWith%\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45083
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4891041
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"ae6a6313-65fb-4757-91f3-f07b683cdeb2\",\"description\":\"descriptionWith%\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"ae6a6313-65fb-4757-91f3-f07b683cdeb2\",\"description\":\"descriptionWith%\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith^\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5336041
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith^",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"9c985268-1237-4eb1-aec8-f1672bdcc837\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4570917
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 9c985268-1237-4eb1-aec8-f1672bdcc837",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/9c985268-1237-4eb1-aec8-f1672bdcc837",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"9c985268-1237-4eb1-aec8-f1672bdcc837\",\"description\":\"descriptionWith^\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 185457
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4886332
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"9c985268-1237-4eb1-aec8-f1672bdcc837\",\"description\":\"descriptionWith^\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"9c985268-1237-4eb1-aec8-f1672bdcc837\",\"description\":\"descriptionWith^\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith&\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6212208
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith&",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"bf59e33e-b222-4261-a31f-acd4fcc55697\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3675875
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id bf59e33e-b222-4261-a31f-acd4fcc55697",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/bf59e33e-b222-4261-a31f-acd4fcc55697",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"bf59e33e-b222-4261-a31f-acd4fcc55697\",\"description\":\"descriptionWith&\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43624
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3566625
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"bf59e33e-b222-4261-a31f-acd4fcc55697\",\"description\":\"descriptionWith&\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"bf59e33e-b222-4261-a31f-acd4fcc55697\",\"description\":\"descriptionWith&\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith*\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5359875
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith*",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"8d8f27b9-e62e-4372-90ed-a8a9bb31a46c\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3890042
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 8d8f27b9-e62e-4372-90ed-a8a9bb31a46c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/8d8f27b9-e62e-4372-90ed-a8a9bb31a46c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"8d8f27b9-e62e-4372-90ed-a8a9bb31a46c\",\"description\":\"descriptionWith*\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38208
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4259750
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"8d8f27b9-e62e-4372-90ed-a8a9bb31a46c\",\"description\":\"descriptionWith*\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"8d8f27b9-e62e-4372-90ed-a8a9bb31a46c\",\"description\":\"descriptionWith*\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith()\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6167999
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith()",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"b309c130-9b62-497f-861d-06a30c8a8406\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4845833
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id b309c130-9b62-497f-861d-06a30c8a8406",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/b309c130-9b62-497f-861d-06a30c8a8406",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"b309c130-9b62-497f-861d-06a30c8a8406\",\"description\":\"descriptionWith()\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34999
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5739207
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"b309c130-9b62-497f-861d-06a30c8a8406\",\"description\":\"descriptionWith()\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"b309c130-9b62-497f-861d-06a30c8a8406\",\"description\":\"descriptionWith()\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith{}\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6135040
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith{}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"df599c47-982c-4ec7-aa35-9a50a29afdbc\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4254916
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id df599c47-982c-4ec7-aa35-9a50a29afdbc",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/df599c47-982c-4ec7-aa35-9a50a29afdbc",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"df599c47-982c-4ec7-aa35-9a50a29afdbc\",\"description\":\"descriptionWith{}\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35583
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20030791
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"df599c47-982c-4ec7-aa35-9a50a29afdbc\",\"description\":\"descriptionWith{}\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"df599c47-982c-4ec7-aa35-9a50a29afdbc\",\"description\":\"descriptionWith{}\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith[]\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6147083
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith[]",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"f3a97761-634c-416b-a0e3-0d368d8522e6\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4754791
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id f3a97761-634c-416b-a0e3-0d368d8522e6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/f3a97761-634c-416b-a0e3-0d368d8522e6",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"f3a97761-634c-416b-a0e3-0d368d8522e6\",\"description\":\"descriptionWith[]\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39209
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-speacial-character",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Create new item with speacial character",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4174458
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"f3a97761-634c-416b-a0e3-0d368d8522e6\",\"description\":\"descriptionWith[]\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"f3a97761-634c-416b-a0e3-0d368d8522e6\",\"description\":\"descriptionWith[]\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User creates a new ToDo item with special character \"descriptionWith;:'?<>,.\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5181499
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description descriptionWith;:'?<>,.",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Create Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "\"9324de3d-138c-4412-95ee-b6cdde74d941\"",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 201 Expected status was 409",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "A new item is created in the list with special character",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4614833
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 9324de3d-138c-4412-95ee-b6cdde74d941",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/9324de3d-138c-4412-95ee-b6cdde74d941",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"9324de3d-138c-4412-95ee-b6cdde74d941\",\"description\":\"descriptionWith;:'?<>,.\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33124
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4906500
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"9324de3d-138c-4412-95ee-b6cdde74d941\",\"description\":\"descriptionWith;:'?<>,.\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"9324de3d-138c-4412-95ee-b6cdde74d941\",\"description\":\"descriptionWith;:'?<>,.\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"d\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5027333
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description d",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4584832
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 7127eb6f-1a62-449f-a5fb-fc3882cc45a5",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/7127eb6f-1a62-449f-a5fb-fc3882cc45a5",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"7127eb6f-1a62-449f-a5fb-fc3882cc45a5\",\"description\":\"d\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43584
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6665874
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"7127eb6f-1a62-449f-a5fb-fc3882cc45a5\",\"description\":\"d\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"7127eb6f-1a62-449f-a5fb-fc3882cc45a5\",\"description\":\"d\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"small\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5810624
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description small",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4469542
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 160a9908-b8ad-4e64-a2f3-dabb0c59aa78",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/160a9908-b8ad-4e64-a2f3-dabb0c59aa78",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"160a9908-b8ad-4e64-a2f3-dabb0c59aa78\",\"description\":\"small\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26792
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4397665
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"160a9908-b8ad-4e64-a2f3-dabb0c59aa78\",\"description\":\"small\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"160a9908-b8ad-4e64-a2f3-dabb0c59aa78\",\"description\":\"small\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"medium\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4389249
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description medium",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7153792
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 64a93329-f2e1-4506-8131-e5b7747484c0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/64a93329-f2e1-4506-8131-e5b7747484c0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"64a93329-f2e1-4506-8131-e5b7747484c0\",\"description\":\"medium\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38832
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4749875
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"64a93329-f2e1-4506-8131-e5b7747484c0\",\"description\":\"medium\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"64a93329-f2e1-4506-8131-e5b7747484c0\",\"description\":\"medium\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"bigdescription\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6685958
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description bigdescription",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8272583
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 20f08699-49d9-4413-b2ec-e1a4b404c700",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/20f08699-49d9-4413-b2ec-e1a4b404c700",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"20f08699-49d9-4413-b2ec-e1a4b404c700\",\"description\":\"bigdescription\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37916
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4431750
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"20f08699-49d9-4413-b2ec-e1a4b404c700\",\"description\":\"bigdescription\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"20f08699-49d9-4413-b2ec-e1a4b404c700\",\"description\":\"bigdescription\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"longdescriptionnnnnnnnnnnnnnnnnnnnn\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4957750
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description longdescriptionnnnnnnnnnnnnnnnnnnnn",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6594875
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id afae2936-833b-4baf-a068-f7eb3e7e5ed2",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/afae2936-833b-4baf-a068-f7eb3e7e5ed2",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"afae2936-833b-4baf-a068-f7eb3e7e5ed2\",\"description\":\"longdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35332
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list;create-new-item-with-long-characters-string",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Create new item with long characters string",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "When the ToDo list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4326541
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"afae2936-833b-4baf-a068-f7eb3e7e5ed2\",\"description\":\"longdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"afae2936-833b-4baf-a068-f7eb3e7e5ed2\",\"description\":\"longdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User creates a new ToDo item with long description \"verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn\"",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5338541
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "A new item is created in the list with long description",
+            "match": {
+              "location": "src/tests/features/step_definitions/createItemSteps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4640791
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id 947e9f4c-c9c7-48ac-900f-d602df22b572",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/947e9f4c-c9c7-48ac-900f-d602df22b572",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"947e9f4c-c9c7-48ac-900f-d602df22b572\",\"description\":\"verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48084
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-should-be-able-to-create-a-new-item-in-todo-list",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "As a user I should be able to create a new item in ToDo list",
+    "tags": [
+      {
+        "name": "@create",
+        "line": 1
+      }
+    ],
+    "uri": "src/tests/features/createItem.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-list-all-the-items;list-items-with-todo-list-is-has-items",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "List items with ToDo list is has items",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "When the list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4492249
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"947e9f4c-c9c7-48ac-900f-d602df22b572\",\"description\":\"verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"947e9f4c-c9c7-48ac-900f-d602df22b572\",\"description\":\"verrrrrryverrrrrrrrylonnnnnnngdescriptionnnnnnnnnnnnnnnnnnnnn\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User creates few items",
+            "match": {
+              "location": "src/tests/features/step_definitions/listAllItemSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21475625
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description pv55z",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description 2nhrj",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description bu2t2",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description 74m43",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description ks255",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Item list is displayed successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/listAllItemSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3997916
+            },
+            "embeddings": [
+              {
+                "data": "Listing All items",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List All API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "[{\"id\":\"4373251f-9597-49f9-8161-fdc800ed188d\",\"description\":\"pv55z\",\"isCompleted\":false},{\"id\":\"4c9b0ed7-df55-4b97-ab54-20d1a7e0fbd7\",\"description\":\"2nhrj\",\"isCompleted\":false},{\"id\":\"26372f06-10e9-4fa8-b1ef-e262fbd9b1f8\",\"description\":\"bu2t2\",\"isCompleted\":false},{\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":false},{\"id\":\"21f2216e-489c-4023-8391-c1bbbb87a867\",\"description\":\"ks255\",\"isCompleted\":false}]",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33874
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@list",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@positive",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-list-all-the-items;list-items-with-todo-list-is-empty",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "List items with ToDo list is empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "When the list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5393166
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 5",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 5 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"4373251f-9597-49f9-8161-fdc800ed188d\",\"description\":\"pv55z\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"4373251f-9597-49f9-8161-fdc800ed188d\",\"description\":\"pv55z\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"4c9b0ed7-df55-4b97-ab54-20d1a7e0fbd7\",\"description\":\"2nhrj\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"4c9b0ed7-df55-4b97-ab54-20d1a7e0fbd7\",\"description\":\"2nhrj\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"26372f06-10e9-4fa8-b1ef-e262fbd9b1f8\",\"description\":\"bu2t2\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"26372f06-10e9-4fa8-b1ef-e262fbd9b1f8\",\"description\":\"bu2t2\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"21f2216e-489c-4023-8391-c1bbbb87a867\",\"description\":\"ks255\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"21f2216e-489c-4023-8391-c1bbbb87a867\",\"description\":\"ks255\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User lists ToDo items",
+            "match": {
+              "location": "src/tests/features/step_definitions/listAllItemSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5365875
+            },
+            "embeddings": [
+              {
+                "data": "Listing All items",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Empty list is displayed successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/listAllItemSteps.js:22"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1620875,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n    at Proxy.<anonymous> (/Users/sagarsaibi/Documents/Personal/clearpoint/automation/sre-assessment/node_modules/@playwright/test/lib/expect.js:129:37)\n    at World.<anonymous> (/Users/sagarsaibi/Documents/Personal/clearpoint/automation/sre-assessment/src/tests/features/step_definitions/listAllItemSteps.js:29:41)\n    at fulfilled (/Users/sagarsaibi/Documents/Personal/clearpoint/automation/sre-assessment/src/tests/features/step_definitions/listAllItemSteps.js:5:58)"
+            },
+            "embeddings": [
+              {
+                "data": "List All API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "[{\"id\":\"4373251f-9597-49f9-8161-fdc800ed188d\",\"description\":\"pv55z\",\"isCompleted\":false},{\"id\":\"4c9b0ed7-df55-4b97-ab54-20d1a7e0fbd7\",\"description\":\"2nhrj\",\"isCompleted\":false},{\"id\":\"26372f06-10e9-4fa8-b1ef-e262fbd9b1f8\",\"description\":\"bu2t2\",\"isCompleted\":false},{\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":false},{\"id\":\"21f2216e-489c-4023-8391-c1bbbb87a867\",\"description\":\"ks255\",\"isCompleted\":false}]",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47291
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@list",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-should-be-able-to-list-all-the-items",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "As a user I should be able to list all the items",
+    "tags": [
+      {
+        "name": "@list",
+        "line": 1
+      }
+    ],
+    "uri": "src/tests/features/listAllItem.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-list-one-item-by-id;list-items-when-todo-list-is-empty",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "List items when ToDo list is empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "When the list is empty",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5326582
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Current list count is 1",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List contains 1 objects",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Marking object complete - {\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":false}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating item status to complete {\"id\":\"cf1ef12a-67eb-4c43-aef3-a52a9ba8facc\",\"description\":\"74m43\",\"isCompleted\":true}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User lists ToDo items with ID",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4768249
+            },
+            "embeddings": [
+              {
+                "data": "Generated random UUID 7aaf9554-f6be-4d08-808c-7f7fc2c6af56 to list",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with UUID 7aaf9554-f6be-4d08-808c-7f7fc2c6af56",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 7aaf9554-f6be-4d08-808c-7f7fc2c6af56",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/7aaf9554-f6be-4d08-808c-7f7fc2c6af56",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Error message is displayed",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 723458
+            },
+            "embeddings": [
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Todo item with id 7aaf9554-f6be-4d08-808c-7f7fc2c6af56 not found",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 404Expected status was 404",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Received respose - Todo item with id 7aaf9554-f6be-4d08-808c-7f7fc2c6af56 not found Expected response was Todo item with id 7aaf9554-f6be-4d08-808c-7f7fc2c6af56 not found",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36833
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@list",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-list-one-item-by-id;list-items-with-todo-list-has-items",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "List items with ToDO list has items",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "When the list has items",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4819207
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description gu9ts",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Created new item with UUID b7c48b78-8607-4d6f-9b4f-55b9b918cd44",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User lists ToDo items with ID from list",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3869708
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with UUID b7c48b78-8607-4d6f-9b4f-55b9b918cd44",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id b7c48b78-8607-4d6f-9b4f-55b9b918cd44",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/b7c48b78-8607-4d6f-9b4f-55b9b918cd44",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Item is displayed with success",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 855209
+            },
+            "embeddings": [
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"b7c48b78-8607-4d6f-9b4f-55b9b918cd44\",\"description\":\"gu9ts\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32167
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@list",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-list-one-item-by-id;list-items-with-incorrect-id",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "List items with incorrect ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "When the list has items",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5782207
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description zsf7c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Created new item with UUID 7c6840f0-01d3-4164-a037-eb367c3ebfb5",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User lists ToDo items with wrong ID",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3861375
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with incorrect UUID 72be6b1a-166d-4669-bdf9-ce182f0192b0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 72be6b1a-166d-4669-bdf9-ce182f0192b0",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/72be6b1a-166d-4669-bdf9-ce182f0192b0",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Error message is displayed for wrong ID",
+            "match": {
+              "location": "src/tests/features/step_definitions/listSingleItemSteps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 614457
+            },
+            "embeddings": [
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Todo item with id 72be6b1a-166d-4669-bdf9-ce182f0192b0 not found",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 404Expected status was 404",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Received respose - Todo item with id 72be6b1a-166d-4669-bdf9-ce182f0192b0 not found Expected response was Todo item with id 72be6b1a-166d-4669-bdf9-ce182f0192b0 not found",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31749
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@list",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-should-be-able-to-list-one-item-by-id",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "As a user I should be able to list one item by ID",
+    "tags": [
+      {
+        "name": "@list",
+        "line": 1
+      }
+    ],
+    "uri": "src/tests/features/listSingleItem.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-update-existing-items-description-and-status-in-todo-list;user-is-able-to-update-description-of-todo-item",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User is able to update description of ToDo item",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "When the list has items to update",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5619124
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description qdjw5",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Generated random UUID 7bd7404d-ff6e-475e-8a2d-edd891349896 to list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User updates description of the items",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8956749
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with UUID 7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"7bd7404d-ff6e-475e-8a2d-edd891349896\",\"description\":\"qdjw5\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating description of Item",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating description to   Modified Description",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Item description is updated successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4409125
+            },
+            "embeddings": [
+              {
+                "data": "Received respose status as - 204 Expected status was 204",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Update successful",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Update API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with UUID 7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/7bd7404d-ff6e-475e-8a2d-edd891349896",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"7bd7404d-ff6e-475e-8a2d-edd891349896\",\"description\":\"Modified Description\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39332
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-update-existing-items-description-and-status-in-todo-list;user-is-able-to-update-status-of-and-item",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "User is able to update status of and item",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "When the list has items to update",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5710166
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description ijh9b",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Generated random UUID ca825b36-c4ec-4bef-bab5-1891a5152bb9 to list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User updates status of the items",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24337375
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id ca825b36-c4ec-4bef-bab5-1891a5152bb9",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/ca825b36-c4ec-4bef-bab5-1891a5152bb9",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"ca825b36-c4ec-4bef-bab5-1891a5152bb9\",\"description\":\"ijh9b\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  ca825b36-c4ec-4bef-bab5-1891a5152bb9",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating status to   true",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Item status is updated successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4653625
+            },
+            "embeddings": [
+              {
+                "data": "Received respose status as - 204 Expected status was 204",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id ca825b36-c4ec-4bef-bab5-1891a5152bb9",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/ca825b36-c4ec-4bef-bab5-1891a5152bb9",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"ca825b36-c4ec-4bef-bab5-1891a5152bb9\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47791
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-update-existing-items-description-and-status-in-todo-list;user-is-able-to-update-description-of-already-completed-item",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User is able to update description of already completed item",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "When user creates an item and marks it complete",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12615041
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description ezx3u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Generated random UUID 8c58d005-7217-48cc-b54c-df2a479b028a to list",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating status to   true",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"8c58d005-7217-48cc-b54c-df2a479b028a\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User updates description of the items",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6960666
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with UUID 8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"8c58d005-7217-48cc-b54c-df2a479b028a\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating description of Item",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating description to   Modified Description",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Item description is updated successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4116791
+            },
+            "embeddings": [
+              {
+                "data": "Received respose status as - 204 Expected status was 204",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Update successful",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Update API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with UUID 8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id 8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/8c58d005-7217-48cc-b54c-df2a479b028a",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"8c58d005-7217-48cc-b54c-df2a479b028a\",\"description\":\"Modified Description\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34416
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-update-existing-items-description-and-status-in-todo-list;user-is-able-to-update-status-of-already-completed-item",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "User is able to update status of already completed item",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "When user creates an item and marks it complete",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15006000
+            },
+            "embeddings": [
+              {
+                "data": "Calling API - api/todoItems",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Creating object with description 0km1b",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Item created successfully",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Generated random UUID a2dc8c1c-b024-4b85-80df-9d64bb30ea0c to list",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating status to   true",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"a2dc8c1c-b024-4b85-80df-9d64bb30ea0c\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User updates status of the items",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7837041
+            },
+            "embeddings": [
+              {
+                "data": "Listing item with id a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List Item API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"a2dc8c1c-b024-4b85-80df-9d64bb30ea0c\",\"description\":\"desc\",\"isCompleted\":true}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Calling API - api/todoItems/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Modifying item with ID  a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Updating status to   false",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Item status is updated successfully",
+            "match": {
+              "location": "src/tests/features/step_definitions/updateItemsSteps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3917458
+            },
+            "embeddings": [
+              {
+                "data": "Received respose status as - 204 Expected status was 204",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Listing item with id a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "API - api/todoItems/a2dc8c1c-b024-4b85-80df-9d64bb30ea0c",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "List API Response :",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"id\":\"a2dc8c1c-b024-4b85-80df-9d64bb30ea0c\",\"description\":\"desc\",\"isCompleted\":false}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "Received respose status as - 200 Expected status was 200",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58707
+            },
+            "embeddings": [
+              {
+                "data": "Logging from after hook",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-should-be-able-to-update-existing-items-description-and-status-in-todo-list",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "As a user I should be able to update existing items description and status in ToDo List",
+    "tags": [
+      {
+        "name": "@update",
+        "line": 1
+      }
+    ],
+    "uri": "src/tests/features/updateItems.feature"
+  }
+]
